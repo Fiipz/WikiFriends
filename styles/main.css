@@ -2,6 +2,7 @@ html {
     margin: 0;
     background-color: rgb(107, 107, 107);
     scroll-behavior: smooth;
+    transition: all ease .5s;
 }
 
 body {
@@ -77,6 +78,14 @@ header {
     margin: 0;
 }
 
+h3 {
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 0px;
+    justify-self: center;
+
+}
+
 .body-txt {
     font-family: sans-serif;
     line-height: 25px;
@@ -96,9 +105,10 @@ nav {
     position: sticky;
 }
 
-/* .nav-list {
-
-} */
+.nav-list {
+    padding: 0 0 0 20px;
+    list-style-type: none;
+}
 
 .nav-sublist {
     padding: 0 0 0 20px;
@@ -136,18 +146,20 @@ main {
     scroll-behavior: smooth;
 }
 
-.char-pic-left,
-.char-pic-right {
+.pic-left,
+.pic-right {
     width: 300px;
     height: 225px;
     object-fit: cover;
     float: left;
     margin: 0 15px 15px 0;
     float: left;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 2px;
 }
 
-.char-pic-right {
+.pic-right {
     margin: 0 0 15px 15px;
     float: right;
 }
@@ -157,8 +169,9 @@ main {
     height: 400px;
     object-fit: cover;
     object-position: 0 6%;
-    border-radius: 5px;
-
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 2px;
 }
 
 /* Estilo padrão para navegadores baseados em WebKit */
