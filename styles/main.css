@@ -3,6 +3,7 @@ html {
     background-color: rgb(107, 107, 107);
     scroll-behavior: smooth;
     transition: all ease .5s;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
 body {
@@ -10,8 +11,10 @@ body {
 }
 
 header {
+    width: 80vw;
     height: 10vh;
-    background-color: rgba(136, 123, 123, 0.3);
+    margin: auto;
+    background-color: #ffffff;
     align-content: center;
     justify-content: center;
     display: flex;
@@ -23,60 +26,51 @@ header {
     height: 70%;
 }
 
-#music-cover {
-    height: 80%;
-    aspect-ratio: 1 / 1;
-    border-radius: 100px;
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 #music {
     position: absolute;
-    left: 85px;
-    top: 50%;
+    left: 42%;
+    top: 85%;
     transform: translateY(-50%);
     border-radius: 10px;
     width: 300px;
     height: 20px;
     background-color: #f0f0f0;
-    border: 2px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.tittle:target {
-    transition: ease .3s;
-    transform: scale(1.2);
-    text-decoration: underline;
-    text-decoration-color: rgb(0, 170, 255);
-}
-
-.subtittle:target {
-    transition: ease .3s;
-    transform: scale(1.5);
-    text-decoration: underline;
-    text-decoration-color: rgb(0, 170, 255);
 }
 
 .tittle {
     scroll-margin-top: 30vh;
-    font-family: cursive;
     font-style: italic;
     font-size: 2rem;
-    transition: all ease .5s;
+    font-weight: 700;
+    transition: all ease .2s;
     justify-self: center;
     margin: 10px 0 10px 0;
 }
 
 .subtittle {
+    transition: all ease .2s;
     scroll-margin-top: 30vh;
-    font-size: 1.2rem;
-    font-family: cursive;
+    font-size: 1.3rem;
+    font-weight: 600;
     justify-self: center;
     margin: 0;
 }
+
+.tittle:target {
+    transition: all ease .2s;
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 170, 255);
+}
+
+.subtittle:target {
+    transition: all ease .2s;
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 170, 255);
+}
+
+
 
 h3 {
     font-size: 1rem;
@@ -87,21 +81,23 @@ h3 {
 }
 
 .body-txt {
-    font-family: sans-serif;
-    line-height: 25px;
-    font-size: 1rem;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
     text-align: justify;
+    padding-bottom: 5rem;
 }
 
 .main-content {
     display: flex;
     flex-direction: row;
+    width: 80vw;
+    margin: auto;
 }
 
 nav {
     height: 90vh;
     width: 15vw;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
     position: sticky;
 }
 
@@ -119,9 +115,9 @@ nav {
 .sublist-item {
     text-decoration: none;
     font-size: 1.2rem;
-    font-family: cursive;
     color: black;
-    transition: ease .3s;
+    transition: ease .2s;
+
 }
 
 .sublist-item {
@@ -130,19 +126,29 @@ nav {
 
 .list-item:hover {
     color: rgb(255, 0, 0);
+    background-color: rgba(169, 169, 169, 0.1);
+    border-radius: 5px;
+    padding: 5px
 }
 
 .sublist-item:hover {
+    color: rgb(0, 157, 255);
+    background-color: rgba(169, 169, 169, 0.1);
+    border-radius: 5px;
+    padding: 5px
+}
+
+.sublist-item:current {
     color: rgb(0, 157, 255);
 }
 
 
 main {
     height: 90vh;
-    width: 70vw;
-    background-color: rgba(255, 255, 255, 0.3);
+    width: 65vw;
+    background-color: #eeeeee;
     overflow: auto;
-    padding: 0 20px 0 20px;
+    padding: 0 10rem 0 10rem;
     scroll-behavior: smooth;
 }
 
@@ -153,10 +159,19 @@ main {
     object-fit: cover;
     float: left;
     margin: 0 15px 15px 0;
-    float: left;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .5);
     padding: 2px;
+    transition: all 0.3s ease;
+}
+
+.pic-left:hover,
+.pic-right:hover,
+.cast:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .8);
+    transition: all 0.3s ease;
 }
 
 .pic-right {
@@ -171,6 +186,8 @@ main {
     object-position: 0 6%;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .5);
+    transition: all 0.3s ease;
     padding: 2px;
 }
 
