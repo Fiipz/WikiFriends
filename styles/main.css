@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    width: 80vw;
+    width: 100vw;
     height: 10vh;
     margin: auto;
     background-color: #ffffff;
@@ -88,15 +88,16 @@ main h3 {
 .main-content {
     display: flex;
     flex-direction: row;
-    width: 80vw;
+    width: 100vw;
     margin: auto;
 }
 
 nav {
     height: 90vh;
-    width: 15vw;
+    width: 15%;
     background-color: #ffffff;
     position: sticky;
+    overflow: auto;
 }
 
 .nav-list {
@@ -155,7 +156,7 @@ li {
 
 main {
     height: 90vh;
-    width: 65vw;
+    flex: 1;
     background-color: #eeeeee;
     overflow: auto;
     padding: 0 5rem 0 5rem;
