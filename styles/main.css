@@ -36,6 +36,7 @@ header {
     height: 20px;
     background-color: #f0f0f0;
 }
+
 .tittle {
     scroll-margin-top: 3vh;
     font-style: italic;
@@ -68,8 +69,6 @@ header {
     text-decoration: underline;
     text-decoration-color: rgb(0, 170, 255);
 }
-
-
 
 main h3 {
     font-size: .8rem;
@@ -119,34 +118,47 @@ nav {
 
 }
 
+
 .sublist-item {
     font-size: 1rem;
 }
 
 .list-item:hover {
     color: rgb(255, 0, 0);
-    background-color: rgba(169, 169, 169, 0.1);
-    border-radius: 5px;
-    padding: 5px
+    padding-left: 5px;
 }
 
 .sublist-item:hover {
     color: rgb(0, 157, 255);
-    background-color: rgba(169, 169, 169, 0.1);
-    border-radius: 5px;
-    padding: 5px
+    padding-left: 5px;
 }
+
 .sublist-item:current {
     color: rgb(0, 157, 255);
 }
 
+ul {
+    ::marker {
+        content: ">";
+        color: #48b;
+    }
+
+    ul ::marker {
+        content: ">>";
+    }
+}
+
+li {
+    padding-inline-start: 0.5em;
+    padding-top: 0.5rem;
+}
 
 main {
     height: 90vh;
     width: 65vw;
     background-color: #eeeeee;
     overflow: auto;
-    padding: 0 10rem 0 10rem;
+    padding: 0 5rem 0 5rem;
     scroll-behavior: smooth;
 }
 
@@ -189,7 +201,6 @@ main {
     padding: 2px;
 }
 
-/* Estilo padrão para navegadores baseados em WebKit */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
